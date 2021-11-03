@@ -7,25 +7,56 @@
         android:layout_height="match_parent"
         tools:context=".FirstFragment">
 
-    <TextView
-            android:id="@+id/textview_first"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/hello_first_fragment"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintBottom_toTopOf="@id/button_first"
-    />
-
     <Button
-            android:id="@+id/button_first"
+            android:id="@+id/buttonGo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/next"
-            app:layout_constraintTop_toBottomOf="@id/textview_first"
+            android:text="@string/buttonStart"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
     />
+    <TextView
+            android:text="@string/textViewRounds"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/textViewRounds"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="60dp" tools:text="@string/textViewRounds"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="24dp"/>
+    <TextView
+            android:text="@string/textViewActivityTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/textViewActivityTime"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="60dp"
+            app:layout_constraintTop_toBottomOf="@+id/textViewRounds" android:layout_marginTop="24dp"
+            tools:text="@string/textViewActivityTime"/>
+    <TextView
+            android:text="@string/textViewBreakTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/textViewBreakTime"
+            android:layout_marginTop="24dp"
+            app:layout_constraintTop_toBottomOf="@+id/textViewActivityTime"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="60dp"
+            tools:text="@string/textViewBreakTime"/>
+    <TextView
+            android:text="@string/textViewScreenLock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/textViewScreenLock"
+            app:layout_constraintTop_toBottomOf="@+id/textViewBreakTime"
+            android:layout_marginTop="24dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="60dp" tools:text="@string/textViewScreenLock"/>
+    <TextView
+            android:text="@string/textViewVolume"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/textViewVolume"
+            app:layout_constraintTop_toBottomOf="@+id/textViewScreenLock"
+            android:layout_marginTop="24dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="60dp" tools:text="@string/textViewVolume"/>
+    <TextView
+            android:text="@string/textViewTotalTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/textViewTotalTime"
+            app:layout_constraintBottom_toTopOf="@+id/buttonGo"
+            android:layout_marginBottom="12dp" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
